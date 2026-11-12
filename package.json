@@ -1,0 +1,26 @@
+{
+  "name": "glpi-ai-ticket-agent",
+  "version": "1.0.0",
+  "description": "AI agent pre GLPI tiketovací systém – čerpá znalosti z vyriešených tiketov a navrhuje riešenia pre nové tikety.",
+  "type": "module",
+  "scripts": {
+    "check": "node --experimental-strip-types --env-file-if-exists=.env src/index.ts check",
+    "start": "node --experimental-strip-types --env-file-if-exists=.env src/index.ts",
+    "test:mock": "node --experimental-strip-types --env-file-if-exists=.env src/index.ts mock",
+    "ingest": "node --experimental-strip-types --env-file-if-exists=.env src/index.ts ingest",
+    "watch": "node --experimental-strip-types --env-file-if-exists=.env src/index.ts watch",
+    "suggest": "node --experimental-strip-types --env-file-if-exists=.env src/index.ts suggest",
+    "test:ticket": "node --experimental-strip-types --env-file-if-exists=.env src/index.ts test-ticket",
+    "stats": "node --experimental-strip-types --env-file-if-exists=.env src/index.ts stats"
+  },
+  "keywords": [
+    "glpi",
+    "ai",
+    "ticket-bot",
+    "rag",
+    "llm",
+    "helpdesk"
+  ],
+  "author": "",
+  "license": "MIT"
+}
